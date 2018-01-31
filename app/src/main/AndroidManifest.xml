@@ -3,7 +3,8 @@
     package="com.xty.espressorecipe">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:name=".BaseApplication"
@@ -16,19 +17,38 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecyclerViewActivity" >
+        <activity android:name=".RecyclerViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="com.xty.demos" />
             </intent-filter>
         </activity>
         <activity android:name=".network.ui.MovieActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.xty.demos" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recipe.ListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.xty.demos" />
+            </intent-filter>
+        </activity>
+
+        <!-- <service android:name="com.hugo.watcher.WatcherService" /> -->
+        <activity android:name=".customview.CustomViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="com.xty.demos" />
             </intent-filter>
         </activity>
