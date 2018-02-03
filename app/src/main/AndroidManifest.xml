@@ -52,6 +52,13 @@
                 <category android:name="com.xty.demos" />
             </intent-filter>
         </activity>
+        <activity android:name=".handlerdemo.HandlerDemoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.xty.demos" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
